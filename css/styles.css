@@ -1,0 +1,284 @@
+/** GLOBAL PAGE STYLES **/
+
+a,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+#main-nav a,
+#main-nav a:active,
+#main-nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  color: #454545;
+}
+
+.header {
+  background-color: #535555;
+}
+
+#nav-top {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../images/header-bg.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 170px;
+  margin-left: 14px;
+}
+
+#nav-icons {
+  height: 20px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+#nav-icons a,
+#nav-icons a:active,
+#nav-icons a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-nav {
+  background-color: #2d7992;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+#main-nav a {
+  padding: 18px 24px;
+  white-space: nowrap;
+}
+#main-nav a:hover {
+  background-color: #26687d;
+}
+
+main {
+  padding: 20px;
+}
+
+.main-header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  border-bottom: 1px solid #ebeef4;
+  margin-bottom: 10px;
+}
+
+.community-chat {
+  border: 1px solid #ebeef4;
+  padding: 8px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.community-chat:hover {
+  border: 1px solid #dce3f0;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+#container .left {
+  width: 61%;
+}
+
+#container .right {
+  width: 38%;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  margin-bottom: 0px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  border: 1px solid #ebeef4;
+  border-radius: 4px;
+}
+
+.box-percentage {
+  font-size: 10px;
+}
+
+.stats .divider {
+  height: 40px;
+  border-right: 1px solid #ebeef4;
+}
+
+/* FILTER FORM */
+
+.filter {
+  align-self: flex-start;
+}
+form {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-gap: 14px;
+  margin-top: 20px;
+}
+label {
+  grid-column: 1/2;
+  padding-left: 20px;
+  font-size: 14px;
+  text-align: right;
+}
+input {
+  grid-column: 2/3;
+  border-radius: 5px;
+  border: 1px solid #ebeef4;
+  width: 120px;
+  height: 30px;
+  margin-top: -8px;
+  padding: 12px;
+  outline: none;
+}
+
+button {
+  grid-column: 2/3;
+  border-radius: 5px;
+  background-color: #ebeef4;
+  width: 120px;
+  height: 30px;
+  outline: none;
+}
+
+/* Left Side Graphs */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 350px;
+  border-bottom: 1px solid #ebeef4;
+  margin: 10px auto;
+  padding: 18px;
+}
+
+.left .item-row {
+  padding-left: 0;
+}
+
+.legend-box {
+  width: 21%;
+  /* align-self: flex-start; */
+}
+.legend-box a{
+  font-size: 10px;
+  cursor: pointer;
+  display: block;
+  padding: 5px 0;
+  color: red;
+}
+
+.legend-box.donut {
+  width: 35%;
+  /* border: 1px solid grey; */
+}
+
+.legend-box .legend {
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.legend li span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  margin-bottom: -2px;
+  margin-top: 2px;
+}
+.legend li {
+  white-space: nowrap;
+}
+
+.legend .trend {
+  background-color: #ebf6fa;
+}
+
+.legend .current {
+  background-color: #565656;
+}
+
+.legend .website {
+  background-color: rgb(153, 0, 153);
+}
+
+.legend .video {
+  background-color: rgb(51, 102, 204);
+}
+
+.legend .gaming {
+  background-color: rgb(220, 57, 18);
+}
+
+.legend .content-downstream {
+  background-color: rgb(255, 153, 0);
+}
+
+.legend .content-upstream {
+  background-color: rgb(16, 150, 24);
+}
+
+.legend .voip {
+  background-color: rgb(151, 56, 80);
+}
+
+.graph {
+  width: 75%;
+  height: 300px;
+}
+
+.graph .label-bottom {
+  text-align: center;
+  font-size: 12px;
+  margin-left: 40px;
+  padding: 10px 0;
+}
+
+#pie-chart {
+  content: '';
+}
+
+
+#donut {
+  align-self: flex-start;
+  width: 60%;
+  height: 300px;
+}
+
+

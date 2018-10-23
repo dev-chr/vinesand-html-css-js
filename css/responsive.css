@@ -1,0 +1,16 @@
+@media (max-width: 940px) {
+  #container {
+    display: block;
+  }
+
+  #container .left {
+    display: block;
+    width: 100%;
+  }
+
+  #container .right {
+    display: block;
+    width: 100%;
+  }
+}
+
